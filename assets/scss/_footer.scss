@@ -1,0 +1,35 @@
+footer {
+
+    background-color: $color-dark;
+
+    color: $color-white;
+
+    padding: 60px 20px;
+}
+
+.footer-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    max-width: $container-width;
+
+    margin: auto;
+
+    flex-wrap: wrap;
+}
+
+footer h3 {
+
+    color: $color-primary;
+
+    margin-bottom: 15px;
+}
+
+footer p {
+
+    line-height: 1.7;
+}

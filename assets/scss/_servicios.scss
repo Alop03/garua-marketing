@@ -1,0 +1,62 @@
+.servicios-detalles {
+
+    padding: $section-padding 20px;
+
+    text-align: center;
+
+    h2 {
+
+        @include section-title;
+
+        margin-bottom: 50px;
+    }
+}
+
+.servicios-detalle-container {
+
+    max-width: $container-width;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.servicio-box {
+
+    @extend .card-base;
+
+    padding: 35px;
+
+    transition: $transition;
+
+    cursor: pointer;
+
+    &:hover {
+
+        transform: translateY(-10px);
+
+        box-shadow: 0 15px 30px rgba(0,0,0,.12);
+    }
+
+    h3 {
+
+        color: $color-primary;
+
+        margin-bottom: 15px;
+
+        font-family: $font-title;
+
+        font-size: 1.8rem;
+    }
+
+    p {
+
+        color: $color-text;
+
+        line-height: 1.7;
+    }
+}

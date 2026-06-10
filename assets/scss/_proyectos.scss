@@ -1,0 +1,78 @@
+.portfolio {
+
+    padding: $section-padding 20px;
+
+    text-align: center;
+
+    h2 {
+
+        @include section-title;
+
+        margin-bottom: 50px;
+    }
+}
+
+.portfolio-container {
+
+    max-width: $container-width;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.portfolio-card {
+
+    @extend .card-base;
+
+    overflow: hidden;
+
+    transition: $transition;
+
+    cursor: pointer;
+
+    &:hover {
+
+        transform: translateY(-10px);
+
+        box-shadow: 0 15px 30px rgba(0,0,0,.12);
+    }
+
+    h3 {
+
+        color: $color-primary;
+
+        margin: 20px 0 10px;
+    }
+
+    p {
+
+        padding: 0 20px 25px;
+
+        color: $color-text;
+
+        line-height: 1.7;
+    }
+}
+
+.proyecto-img {
+
+    height: 220px;
+
+    background-color: #d9d9d9;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: 600;
+
+    color: #666666;
+}
+

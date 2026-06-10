@@ -1,0 +1,36 @@
+@mixin flex-center {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+@mixin button-primary {
+
+    background-color: $color-primary;
+
+    color: $color-white;
+
+    padding: 14px 30px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: $transition;
+}
+
+@mixin section-title {
+
+    font-family: $font-title;
+
+    color: $color-dark;
+
+    font-size: 3rem;
+
+    text-align: center;
+}

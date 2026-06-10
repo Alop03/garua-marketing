@@ -1,0 +1,232 @@
+.hero {
+
+    min-height: 80vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background-color: $color-light;
+
+    .hero-content {
+
+        max-width: 800px;
+
+        h1 {
+
+            font-family: $font-title;
+
+            font-size: 4rem;
+
+            color: $color-dark;
+
+            margin-bottom: 20px;
+        }
+
+        p {
+
+            font-family: $font-body;
+
+            font-size: 1.1rem;
+
+            color: $color-text;
+
+            line-height: 1.8;
+
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.btn-principal {
+
+    @include button-primary;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    &:hover {
+
+        background-color: $color-primary-hover;
+
+        transform: translateY(-3px);
+    }
+}
+
+.servicios {
+
+    padding: $section-padding 20px;
+
+    text-align: center;
+
+    h2 {
+
+        @include section-title;
+
+        margin-bottom: 50px;
+    }
+}
+
+.servicios-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    max-width: $container-width;
+
+    margin: auto;
+}
+
+.card {
+
+    @extend .card-base;
+
+    padding: 30px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+
+        transform: translateY(-8px);
+
+        box-shadow: 0 15px 30px rgba(0,0,0,.12);
+    }
+
+    h3 {
+
+        margin-bottom: 15px;
+
+        color: $color-primary;
+    }
+
+    p {
+
+        color: $color-text;
+
+        line-height: 1.7;
+    }
+}
+.estadisticas {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    h3 {
+
+        font-size: 3rem;
+
+        color: $color-primary;
+
+        margin-bottom: 10px;
+    }
+
+    p {
+
+        color: $color-text;
+    }
+}
+
+.casos-exito {
+
+    padding: $section-padding 20px;
+
+    background-color: $color-light;
+
+    text-align: center;
+
+    h2 {
+
+        @include section-title;
+
+        margin-bottom: 50px;
+    }
+}
+
+.caso-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    max-width: $container-width;
+
+    margin: auto;
+}
+
+.caso {
+
+    @extend .card-base;
+
+    padding: 30px;
+
+    transition: $transition;
+
+    &:hover {
+
+        transform: translateY(-8px);
+    }
+
+    h3 {
+
+        color: $color-primary;
+
+        margin-bottom: 15px;
+    }
+}
+
+.cta {
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background-color: $color-dark;
+
+    color: $color-white;
+
+    h2 {
+
+        font-family: $font-title;
+
+        font-size: 3rem;
+
+        margin-bottom: 20px;
+    }
+
+    p {
+
+        margin-bottom: 30px;
+    }
+}
+
+.estadisticas-section {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 80px;
+
+    padding: 80px 20px;
+
+    background-color: $color-white;
+
+    flex-wrap: wrap;
+}
+
+

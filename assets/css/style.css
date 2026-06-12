@@ -424,13 +424,21 @@ footer p {
 }
 
 .proyecto-img {
+  width: 100%;
   height: 220px;
-  background-color: #d9d9d9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-  color: #666666;
+  overflow: hidden;
+}
+
+.proyecto-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover .proyecto-img img {
+  transform: scale(1.05);
 }
 
 .contacto {

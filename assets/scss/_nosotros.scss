@@ -74,10 +74,17 @@
 }
 
 .historia-imagen {
+    width: 555px;
+    height: 350px;
+    overflow: hidden;
+}
 
-    flex: 1;
-
-    min-width: 300px;
+.historia-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
 }
 
 .placeholder-imagen {
@@ -191,3 +198,5 @@
         color: $color-text;
     }
 }
+
+

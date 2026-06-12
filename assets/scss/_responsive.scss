@@ -51,6 +51,19 @@
         flex-direction: column;
     }
 
+    .historia-imagen {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .historia-imagen img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+    }
+
     .estadisticas-section {
 
         flex-direction: column;
